@@ -1,0 +1,97 @@
+body {
+	background: grey;
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+}
+.main {
+	position: relative;
+	top: 30px;
+}
+.line {
+	height: 5px;
+	width: 200px;
+	background: gold;
+	border: 2px solid black;
+	border-radius: 10px;
+	animation: line 2s linear infinite;
+	animation-delay: 10;
+}
+@keyframes line {
+	0%{
+		transform: rotateZ(0deg);
+	}
+	25%{
+		transform: rotateZ(-25deg);
+	}
+	75%{
+		transform: rotateZ(25deg);
+	}
+	
+}
+.ball {
+	height: 25px;
+	width: 25px;
+	background: #7CFC00;
+	border: 2px solid black;
+	border-radius: 50%;
+	position: absolute;
+	top: 275px;
+	animation: jump1 2s linear infinite;
+	animation-delay: 1s;
+}
+@keyframes jump1 {
+	0%{
+		transform: translateY(0px);
+	}
+	25%{
+		transform: translateY(-50px);
+	}
+	50%{
+		transform: translateY(-100px);
+	}
+	75%{
+		transform: translateY(-50px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+}
+.ball2 {
+	height: 25px;
+	width: 25px;
+	background: #7CFC00;
+	border: 2px solid black;
+	border-radius: 50%;
+	position: absolute;
+	top: 275px;
+	left: 760px;
+	animation: jump2 2s linear infinite;
+}
+@keyframes jump2 {
+	0%{
+		transform: translateY(0px);
+	}
+	25%{
+		transform: translateY(-50px);
+	}
+	50%{
+		transform: translateY(-100px);
+	}
+	75%{
+		transform: translateY(-50px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+}
+
+.bigball {
+	height: 50px;
+	width: 50px;
+	background: #8B008B;
+	border-radius: 50%;
+	border: 2px solid black;
+	margin-left: 70px;
+}
+
